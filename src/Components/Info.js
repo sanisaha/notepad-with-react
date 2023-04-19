@@ -15,7 +15,7 @@ const Info = (props) => {
             </div>
            <div>
            <label htmlFor="phone">phone</label>
-    <input type="number" name="phone"/><br/>
+    <input type="number" name="phone"/>
            </div>
            <div>
            <label htmlFor="role">Role</label>

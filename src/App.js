@@ -6,23 +6,32 @@ import Modal from './Components/Modal';
 
 class App extends Component {
   state={
+    note:{
     firstname:'',
     lastname:'',
     phone:'',
     role:'',
-    message:'',
+    message:''
+    },
     button:false
   }
   handleInputValue = (e) => {
     const name = e.target.name;
-    this.setState({[name] : 
-      e.target.value})
+    this.setState({note: {...this.state.note, [name]:
+      e.target.value}})
   }
   handleSubmit = (e) => {
     e.preventDefault();
     this.setState({button : 
       !this.state.button})
-  };
+      e.target.reset();     
+    };
+
+  handleModal = (e) => {
+    e.preventDefault();
+    this.setState({button : 
+      !this.state.button})      
+    };
 
   render() {
     return (
@@ -36,23 +45,15 @@ class App extends Component {
       </div>
       <div className='note'>
       <Note 
-      firstname={this.state.firstname}
-      lastname={this.state.lastname}
-      phone={this.state.phone}
-      role={this.state.role}
-      message={this.state.message}
+      {...this.state.note}
       ></Note>
       </div>
     </div>
     {
       this.state.button && 
     <Modal
-    firstname={this.state.firstname}
-    lastname={this.state.lastname}
-    phone={this.state.phone}
-    role={this.state.role}
-    message={this.state.message}
-    handleSubmit={this.handleSubmit}
+    {...this.state.note}
+    handleModal={this.handleModal}
     ></Modal>
     }
       </div>

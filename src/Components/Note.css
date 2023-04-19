@@ -1,7 +1,7 @@
 .note-container {
   background-color: white;
   padding: 5% 10%;
-  width: 400px;
+  width: 30rem;
   height: 300px;
   border: 1px solid #000;
   border-top-left-radius: 20px;
@@ -38,5 +38,8 @@
 .note-container div:nth-child(4) {
   border-bottom: 1px solid black;
 }
-
+p {
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+}
 /* background-image: url("paper-texture.jpg"); */
