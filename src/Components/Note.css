@@ -1,0 +1,42 @@
+.note-container {
+  background-color: white;
+  padding: 5% 10%;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: black;
+}
+.note-container input {
+  display: inline-block;
+  background-color: rgb(22, 188, 105);
+}
+.note-container input {
+  border: none;
+}
+.note-container div {
+  width: 100%;
+  resize: none;
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 18px;
+  line-height: 0.8;
+  padding: 10px;
+  border: none;
+}
+.note-container div:nth-child(1) {
+  border-bottom: 1px solid black;
+}
+.note-container div:nth-child(2) {
+  border-bottom: 1px solid black;
+}
+.note-container div:nth-child(3) {
+  border-bottom: 1px solid black;
+}
+.note-container div:nth-child(4) {
+  border-bottom: 1px solid black;
+}
+
+/* background-image: url("paper-texture.jpg"); */
