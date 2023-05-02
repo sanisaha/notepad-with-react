@@ -12,8 +12,8 @@ const Modal = ({firstname, lastname, phone, role, message, handleModal}) => {
           <p>Phone: {phone}</p>
           <p>Role: {role}</p>
           <p>Message: {message}</p>
-          <button onClick={handleModal}>YES, I AM SURE</button>
-          <button onClick={handleModal}>NO, I DON'T WANT TO POST IT</button>
+          <button onClick={()=>handleModal('yes')}>YES, I AM SURE</button>
+          <button onClick={()=>handleModal('no')}>NO, I DON'T WANT TO POST IT</button>
         </div>
 
       </div>
